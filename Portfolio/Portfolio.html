@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>My Portfolio</title>
+  <style>
+    body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: grey;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    }
+
+  img {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  nav {
+    width: 120px;
+    background-color: #222;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+  }
+
+  nav a {
+    padding: 16px;
+    display: block;
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  nav a.active {
+    background-color: black;
+    color: white;
+  }
+
+  #main {
+    margin-left: 120px;
+    padding: 32px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+    background-color: black;
+  }
+
+  .header img {
+    width: 60%;
+    max-width: 1000px;
+  }
+
+  .skills div {
+    background-color: white;
+    height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .skills div.dark-grey {
+    background-color: darkgrey;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    color: lightgrey;
+    font-size: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+    display: inline-block;
+  }
+
+  .contact-info i {
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .contact-info p {
+    margin: 10px 0;
+  }
+
+  .button {
+    padding: 16px;
+    background-color: lightgrey;
+    color: black;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    padding: 64px;
+    font-size: 24px;
+  }
+
+  footer i {
+    margin-right: 10px;
+  }
+
+  footer a {
+    color: green;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0;
+    }
+
+    nav {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      width: 25%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav>
+  <img src="./usericon3.png">
+  <a href="#" class="active"><i class="fa fa-home"></i> HOME</a>
+  <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+  <a href="#projects"><i class="fa fa-globe"></i> PROJECTS</a>
+  <a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+</nav>
+
+<div id="main">
+  <!-- Header/Home -->
+  <header class="header" style="color: white;">
+    <h1>I'm Mounika G.</h1>
+    <p>Web Developer.</p>
+    <img src="./usericon3.png" alt="Mounika G">
+  </header>
+
+  <!-- About Section -->
+  <div class="section" id="about" style="padding: 64px;">
+    <h2 class="section-title" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px; color: white;">About Me</h2>
+    <p>Seeking opportunity to my talent for coding and problem-solving to become a skilled web developer and trainer
+        for making creative and user-friendly websites.</p>
+    
+    <h3 style="color: white;">Grades</h3>
+    <div class="skills">
+      <p>SSC(97%)</p>
+      <div style="background-color: white;">
+      <div class="dark-grey" style="width: 97%;"></div>
+      </div>
+      <p>Intermediate(91%)</p>
+      <div style="background-color: white;">
+      <div class="dark-grey" style="width: 91%;"></div>
+      </div>
+      <p>BCA(until IV semester)(87%)</p>
+      <div style="background-color: white;">
+      <div class="dark-grey" style="width: 87%;"></div>
+      </div>
+    </div>
+    <button style="background-color: lightgrey; padding: 16px; margin: 16px;">
+        <i class="fa fa-download"></i>
+    <a href="./Mouni resume.pdf" download style="color: black;">My Resume</a>
+</button>
+  </div>
+
+  <!--Skills-->
+  <h3 style="padding: 16px; color:lightgrey; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 35px; color: white;">My Skills</h3>
+    <div style="display: flex; margin: 0 16px;">
+      <div style="flex: 1; margin-bottom: 16px;">
+        <ul style="list-style-type: none; padding:0px; background-color: white; text-align: center; opacity: 0.9;color: rgb(10, 10, 10);">
+          <li style="background-color: darkgrey; font-size: 24px; padding: 25px; color: black;">Skill Set</li>
+          <li style="padding: 16px;">Frontend :HTML, CSS, JS, ReactJS, Figma</li>
+          <li style="padding: 16px;">Database: MySQL</li>
+          <li style="padding: 16px;">Programing languages : C, C++, Java, Python</li>
+          <li style="padding: 16px;">MS Office</li>
+        </ul>
+
+   <!--Projects--> 
+   <section id="projects" style="padding: 24px;">
+   <h3 style="padding: 24px; color: lightgrey; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 35px; color: white;">My Projects</h3>  
+    <img src="./projecticon.jpeg" alt="Avatar" style="width:80px; border-radius: 50%; margin-right: 16px; float: left;">
+    <p style="color: white;"><strong>Responsive Bootstrap Website</strong></p>
+    <p style="color: lightgrey;">Developed a fully responsive Bootstrap website, enhancing user experience across devices through intuitive design and seamless functionality.</p><br>
+    
+    <img src="./projecticon.jpeg" alt="Avatar" style="width:80px; border-radius: 50%; margin-right: 16px; float: left;">
+    <p style="color: white;"><strong>Blog Website</strong></p>
+    <p style="color: lightgrey;">Developed and managed a dynamic blog showcasing engaging content
+        across various topics, enhancing audience interaction and driving
+        online growth.</p><br>
+
+    <img src="./projecticon.jpeg" alt="Avatar" style="width:80px; border-radius: 50%; margin-right: 16px; float: left;">
+    <p style="color: white;"><strong>Instagram Clone</strong></p>
+    <p style="color: lightgrey;">Designed and implemented an Instagram clone, featuring user friendly interfaces, real-time interactions, and a robust photo-sharing
+        platform</p><br>
+
+    <img src="./projecticon.jpeg" alt="Avatar" style="width:80px; border-radius: 50%; margin-right: 16px; float: left;">
+    <p style="color: white;"><strong>Resume Builder</strong></p>
+    <p style="color: lightgrey;">Created an intuitive resume builder that streamlines the design and
+        formatting process, empowering users to craft professional resumes
+        effortlessly.</p><br>
+
+    <img src="./projecticon.jpeg" alt="Avatar" style="width:80px; border-radius: 50%; margin-right: 16px; float: left;">
+    <p style="color: white;"><strong>Online Course Platform UI in Figma</strong></p>
+    <p style="color: lightgrey;">Designed a user-friendly UI for an online course platform, enhancing
+        user experience and accessibility for seamless learning.</p>
+      </div>
+    </div>
+  </section>
+    
+    <!--Certificates-->
+    <h2 style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 35px; margin-left: 75px;">Certifications</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; margin: -16px;">
+        <div style="flex: 1; padding: 16px; padding-left: 250px;">
+            <img src="./AIforEveryone.png" alt="AIforEveryone" style="width: 50%;">
+            <img src="./CloudComputingApplications.png" alt="CloudComputingApplications" style="width: 50%;">
+            <img src="./IntroductionToCloudComputing.png" alt="IntroductionToCloudComputing" style="width: 50%;">
+        </div>
+        <div style="flex: 1; padding: 16px;">
+            <img src="./IntroductionToCyberSecurity.png" alt="IntroductionToCyberSecurity" style="width: 50%;">
+            <img src="./GoogleCloudBigData_Coursera_Certificate.png" alt="GoogleCloudBigData_Coursera_Certificate" style="width: 50%;">
+            <img src="./TeamWorkSkills.png" alt="TeamWorkSkills" style="width: 50%;">
+        </div>
+    </div>
+
+
+  <!-- Contact Section -->
+  <div class="section" id="contact" style="padding: 64px;">
+    <h2 class="section-title" style="color: white;">Contact Me</h2>
+    <div class="contact-info">
+      <p><i class="fa fa-map-marker"></i> Banglore,Karnataka</p>
+      <p><i class="fa fa-phone"></i> +91 1234567890</p>
+      <p><i class="fa fa-envelope"></i> mouni25022005@gmail.com</p>
+    </div>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Name" required style="padding: 16px; margin-bottom: 10px; width: 75%;"><br>
+      <input type="text" placeholder="Email" required style="padding: 16px; margin-bottom: 10px; width: 75%;"><br>
+      <input type="text" placeholder="Subject" required style="padding: 16px; margin-bottom: 10px; width: 75%;"><br>
+      <input type="text" placeholder="Message" required style="padding: 16px; margin-bottom: 10px; width: 75%;"><br>
+      <button class="button" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.linkedin.com/in/mounika-gumpu-6b1b4b2b1" class="fa fa-linkedin"></a>
+    <a href="https://github.com/mounireddy25" class="fa fa-github"></a>
+    <p style="font-size: small;">&copy;2024 Mounika G.All Rights Reserved</p>
+  </footer>
+</div>
+
+</body>
+</html>
